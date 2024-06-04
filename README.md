@@ -48,10 +48,14 @@ cp .env.sample .env
 ### Step 6: Update `.env` File
 Open the `.env` file and update the key values as necessary.
 
-### Step 7: Run Environment Setup Script
+### Step 7: Export the Variables Inside Your Environment
 Run the environment setup script:
 ```bash
-python3 setup_env.py
+export OPENAI_API_KEY=[your-key-here]
+export TAVILY_API_KEY=[your-key-here]
+export LANGCHAIN_API_KEY=[your-key-here]
+export LANGCHAIN_TRACING_V2=true
+export LANGCHAIN_PROJECT=default
 ```
 
 ## Usage
